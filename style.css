@@ -1,0 +1,122 @@
+.mySkills {
+
+}
+
+.mySkills h1 {
+    text-align: center;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  
+}
+
+.flexChild {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+ 
+    }
+   
+    .myWork h1 {
+        text-align: center;
+    }
+  
+    .workGrid {
+        display: grid;
+        justify-content: start;
+        height: fit-content;
+        align-content: center;
+        grid-template-rows: auto auto auto;
+        gap: 20px; /* Adjust the gap between grid items according to your design */
+    }
+  
+    .project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+  
+    .projectImage {
+        width: 40%; 
+        box-sizing: border-box;
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+  
+    .projectDetails {
+        width: 40%; 
+        box-sizing: border-box;
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+  
+  /* Resize images to fit within the grid */
+    .project img {
+        max-width: 100%; /* Ensure images don't exceed the width of their container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+  
+  /* Additional styling for better visual representation */
+    .project h4 {
+        margin-top: 0;
+        margin-bottom: 10px; /* Add margin to separate the heading and the paragraph */
+    }
+  
+    .project p {
+        margin-top: 0; /* Remove default top margin for paragraphs */
+    }
+  
+
+
+  .myWork h3 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  /* Add any other styles based on your design */
+  
+  @media only screen and (max-width: 600px) {
+    /* Flex container styles for mobile views */
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    /* Flex children styles for mobile views */
+    .flexChild {
+      width: 100%;
+    }
+  
+    /* Grid container styles for mobile views */
+    .workGrid {
+      grid-template-rows: auto auto auto; /* Auto-sized rows for each project */
+      grid-template-columns: 1fr; /* Single column for mobile views */
+    }
+  
+  }

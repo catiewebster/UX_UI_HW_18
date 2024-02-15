@@ -1,0 +1,70 @@
+.mySkills {
+
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+    /* Add any specific styles for the myWork section here */
+  }
+  
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+    grid-template-rows: auto; /* Automatically adjust row height based on content */
+    gap: 20px; /* Adjust the gap between grid items according to your design */
+    grid-template-areas:
+      "firstProject secondProject thirdProject"; /* Define named grid areas */
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for project image and details */
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  .projectImage {
+    grid-area: projectImage; /* Place the projectImage in the named area */
+  }
+  
+  .projectDetails {
+    grid-area: projectDetails; /* Place the projectDetails in the named area */
+  }
+  
+  /* Resize images to fit within the grid */
+  .project img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  /* Additional styling for better visual representation */
+  .project h4 {
+    margin-top: 0;
+  }
+  
+  /* Add any other styles based on your design */
+  
+  
+  
+  
+  
+  
+  
+  
